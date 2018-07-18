@@ -1,0 +1,7 @@
+{
+    "editor.wordWrap": "off",
+    // Controls the font size in pixels.
+    "editor.fontSize": 14,
+    // Controls the font family.
+    "editor.fontFamily": "Arial, san-serif"
+}
