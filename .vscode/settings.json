@@ -1,7 +1,9 @@
 {
-    "editor.wordWrap": "off",
-    // Controls the font size in pixels.
-    "editor.fontSize": 14,
-    // Controls the font family.
-    "editor.fontFamily": "Arial, san-serif"
+  "editor.wordWrap": "off",
+  // Controls the font size in pixels.
+  "editor.fontSize": 14,
+  // Controls the font family.
+  "editor.fontFamily": "Arial, san-serif",
+  // The default location where to clone a git repository
+  "git.defaultCloneDirectory": http://git.github.com / jfkirkpatrick / NaTours
 }
