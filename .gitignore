@@ -1,6 +1,8 @@
 # Ignore folder named `.tmp.drivedownload` 
 .tmp.drivedownload/
 
+natours-Screwup
+
 # Ignore certain SASS Files
 .sass-cache/
 *.css.map
