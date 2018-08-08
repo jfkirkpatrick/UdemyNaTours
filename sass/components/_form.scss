@@ -54,7 +54,7 @@
 
   &__radio-label {
     font-size: $default-font-size;
-    cursor: pointer;
+    // cursor: pointer;
     position: relative;
     padding-left: 4.5rem;
   }
@@ -67,7 +67,7 @@
     display: inline-block;
     position: absolute;
     left: 0;
-    top: -0.2rem;
+    top: -0.4rem;
 
     &::after {
       content: "";
@@ -81,6 +81,7 @@
       transform: translate(-50%, 50%);
       background-color: $color-primary;
       opacity: 0;
+      transition: opacity 0.2s;
     }
   }
 }
