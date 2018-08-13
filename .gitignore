@@ -5,7 +5,7 @@ natours-Screwup
 
 # Ignore certain SASS Files
 .sass-cache/
-*.css.map
+main.css.map
 *.sass.map
 *.scss.map
 
