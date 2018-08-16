@@ -1,5 +1,5 @@
 .navigation {
-  &__checkbox {     // Okay
+  &__checkbox { 
     display: none;
   }
 
@@ -25,7 +25,9 @@
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient($color-primary-light, $color-primary-dark);
-    z-index: 1000;          //  Okay
+    z-index: 1000; 
+	transition: transform 8s;
+    transform: scale(80);
    
   }
   
@@ -50,23 +52,24 @@
         width: 100%;
   }
     &__item {
-       //    margin: 1rem;
+           margin: 1rem;
     }
 
-  &__link { 
-      /*
+  &__link {   
     &:link,
     &:visited {
-        display: inline-block;
-      font-size: 3rem;
-      font-weight: 300;
-      padding: 1rem 2rem;
-      color: $color-white;
-      text-decoration: none;
-      text-transform: uppercase;
-      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+      
+        // display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-image: linear-gradient(120deg, orangered 0%, orangered 50%, $color-white 50%);
         background-size: 220%;
         transition: all .4s;
+       /*
 
          span {
              margin-right: 1.5rem;
@@ -74,18 +77,17 @@
         }
         */
      }
-/*
+	}
+
      &:hover,
         &:active {
         background-position: 100%;
-       color: $color-primary;
-       transform: translateX(1rem);
+        color: $color-primary;
+      //  transform: translateX(1rem);
     }
-    */
 
  //  FUNCTIONALITY
-
- 
+/*
   &__checkbox:checked ~ &__background {
     transform: scale(80);
     }
@@ -93,5 +95,6 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
-     }
-  }
+	 }
+	 */
+  }		//	Line 1 .navigation
