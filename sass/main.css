@@ -1,4 +1,21 @@
 /* This program will hold functions     */
+/*
+0 - 600px:      	37.5em				Phone
+600 - 900px:      56.25em			Tablet portrait
+900 - 1200px:    75em				 Tablet landscape
+1200 - 1800px	 112.5em		   Is where our normal styles apply
+1800px + :      	Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 /*    sass/_animations.scss   
 */
 @-webkit-keyframes moveInLeft {
@@ -109,6 +126,24 @@
 
 html {
   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
 }
 
 body {
@@ -722,12 +757,12 @@ body {
 }
 
 .popup__left {
-  width: 33.33333333%;
+  width: 33.333333333%;
   display: table-cell;
 }
 
 .popup__right {
-  width: 66.6666666667%;
+  width: 66.666666667%;
   display: table-cell;
   vertical-align: middle;
   padding: 3rem 5rem;
