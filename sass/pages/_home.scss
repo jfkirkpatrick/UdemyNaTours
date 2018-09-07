@@ -10,6 +10,8 @@
 	}
 }
 
+<!--        The section-features class (_home.scss) has to be modified with a media query to make the images responsive
+-->
 .section-features {
   padding: 20rem 0;
   background-image: linear-gradient(
@@ -32,6 +34,8 @@
 	}
 }
 
+<!--        The section-tours class (_home.scss) has to be modified with a media query to make the images responsive
+ -->
 .section-tours {
   background-color: $color-grey-light-1;
   padding: 25rem 0 15rem 0;
@@ -42,6 +46,8 @@
 	}
 }
 
+<!--        The section-stories class (_home.scss) has to be modified with a media query to make the images responsive
+-->
 .section-stories {
   position: relative;
   padding: 15rem 0;
@@ -51,6 +57,8 @@
 	}
 }
 
+<!--        The section-book class (_home.scss) has to be modified with a media query to make the images responsive
+        -->
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(

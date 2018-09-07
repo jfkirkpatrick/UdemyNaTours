@@ -20,12 +20,12 @@
 <body>
 
     <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+        <input type="checkbox" class="navigation__checkbox"  id="navi-toggle">
 
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-
+    
         <div class="navigation__background">&nbsp;</div>
 
         <nav class="navigation__nav">
@@ -48,8 +48,7 @@
             </ul>
         </nav>
     </div>
-<!--        The header class (_header.scss) has been modified with a media query to make the images responsive
--->
+
     <header class="header">
         <div class="header__logo-box">
             <img src="img/logo-white.png" alt="logo" class="header__logo">
@@ -93,33 +92,15 @@
                 </div>
                 <div class="col-1-of-2">
                     <div class="composition">
-<!--
-    The following code will take care of Resolution Switching and Density Switching.
-    The images for the Booking Screen and the "Start Booking Now" popup images and "Story Class" images need to be also changed.
--->
-                        <img srcset="img/nat-1.jpg 300w,  img/nat-1-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                            alt="Photo 1" class="composition__photo composition__photo--p1"
-                             src="img/nat-1-large.jpg">
-
-                        <img srcset="img/nat-2.jpg 300w,  img/nat-2-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                            alt="Photo 2" class="composition__photo composition__photo--p2" src="img/nat-2-large.jpg">
-
-                        <img srcset="img/nat-3.jpg 300w,  img/nat-3-large.jpg 1000w" sizes="(max-width: 900px) 20vw, (max-width: 600px) 30vw, 300px"
-                            alt="Photo 3" class="composition__photo composition__photo--p3" src="img/nat-3-large.jpg">
-
-                        <!--    Replaced by srcset code
                         <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                         <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                         <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
-                        -->
                     </div>
                 </div>
             </div>
         </section>
         <!--    End of Section About    -->
 
-<!--        The section-features class (_home.scss) has to be modified with a media query to make the images responsive
--->
         <section class="section-features">
             <div class="row">
                 <div class="col-1-of-4">
@@ -165,8 +146,6 @@
         </section>
         <!--    End of Section Features    -->
 
-        <!--        The section-tours class (_home.scss) has to be modified with a media query to make the images responsive
-        -->
         <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
@@ -287,8 +266,6 @@
         </section>
         <!--  End of Section Tours  -->
 
-        <!--        The section-stories class (_home.scss) has to be modified with a media query to make the images responsive
-        -->
         <section class="section-stories">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
@@ -313,10 +290,7 @@
                     <div class="story__text">
                         <h3 class="heading-tertiary u-margin-bottom-small">I had the best week ever with my family.</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti, ipsum sapiente aspernatur libero repellat quis
-                            consequatur ducimus quam nisi exercitationem omnis earum qui. Voluptate quia quaerat necessitatibus,
-                            quae dolorem enim eligendi explicabo libero, iure optio magni, adipisci excepturi nemo. Voluptate
-                            quia quaerat necessitatibus, quae dolorem enim eligendi explicabo libero .
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, deleniti, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Voluptate quia quaerat necessitatibus, quae dolorem enim eligendi explicabo libero, iure optio magni, adipisci excepturi nemo. Voluptate  quia quaerat necessitatibus, quae dolorem enim eligendi explicabo libero .
                         </p>
                     </div>
                 </div>
@@ -349,8 +323,6 @@
         </section>
         <!--    End of Section Stories    -->
 
-        <!--        The section-book class (_home.scss) has to be modified with a media query to make the images responsive
-        -->
         <section class="section-book">
             <div class="row">
                 <div class="book">
@@ -406,8 +378,9 @@
         <div class="footer__logo-box">
 
             <picture class="footer__logo">
-                <source srcset="img/logo-green-small-1x.png 1x, img/logo-green-small-2x.png 2x" media="(max-width: 37.5em)">
-                <img srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x" alt="Full logo" src="img/logo-green-2x.png">
+                <source                 srcset="img/logo-green-small-1px.png 1x, img/logo-green-small-2x.png 2x"       
+                    media="(max-width: 37.5rem)">  
+                <img srcset="img/logo-green-1x.png 1x,      img/logo-green-2x.png 2x" alt="Full     Logo">
             </picture>
 
         </div>
@@ -437,36 +410,33 @@
                 <p class="footer__copyright">
                     Built my
                     <a href="#" class="footer__link">Jonas Schmedtmann</a> for his online course
-                    <a href="#" class="footer__link">Advanced CSS and Saas</a> . Copyright &copy; by Jonas Schedtmann. You
-                    are 100% allowed to use this webpage for both personal and commericial use but NOT to claim it as your
-                    own design. A credit to the original author, Jonas Schmedtmann, is of course highly appreciated!
+                    <a href="#" class="footer__link">Advanced CSS and Saas</a> . Copyright &copy; by Jonas Schedtmann. You are 100% allowed to use this webpage
+                    for both personal and commericial use but NOT to claim it as your own design. A credit to the original
+                    author, Jonas Schmedtmann, is of course highly appreciated!
                 </p>
             </div>
         </div>
     </footer>
 
-    <div class="popup" id="popup">
-        <div class="popup__content">
-            <div class="popup__left">
-                <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
-                <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
-            </div>
-            <div class="popup__right">
-                <a href="#section-tours" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
-                <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
-                <p class="popup__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Nisi quis eleifend quam adipiscing. Nunc non blandit massa enim nec dui nunc. Vestibulum morbi blandit
-                    cursus risus at ultrices. Tincidunt eget nullam non nisi est sit amet facilisis. Sagittis purus sit amet
-                    volutpat. Cursus euismod quis viverra nibh cras pulvinar mattis.
-                </p>
-                <a href="#" class="btn btn--green">Book now</a>
-
-            </div>
-        </div>
+<div class="popup" id="popup">
+<div class="popup__content">
+    <div class="popup__left">
+        <img src="img/nat-8.jpg" alt="Tour Photo" class="popup__img">
+        <img src="img/nat-9.jpg" alt="Tour Photo" class="popup__img">
+    </div>
+    <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary u-margin-bottom-small">Start Booking Now</h2>
+        <h3 class="heading-tertiary u-margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+        <p class="popup__text">
+             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Nisi quis eleifend quam adipiscing. Nunc non blandit massa enim nec dui nunc. Vestibulum morbi blandit cursus risus at ultrices.  Tincidunt eget nullam non nisi est sit amet facilisis. Sagittis purus sit amet volutpat. Cursus euismod quis  viverra nibh cras pulvinar mattis.
+        </p>
+        <a href="#" class="btn btn--green">Book now</a>    
 
     </div>
+</div>
+
+</div>
 
 
     <!--        Close this section for now !!
