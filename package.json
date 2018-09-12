@@ -3,13 +3,13 @@
   "version": "1.0.0",
   "description": "Landing Page for NaTours",
   "main": "index.js",
-  "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
-  },
+  "scripts":  {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.css"
+ 	 },
   "author": "John F Kirkpatrick",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.9.0"
-  },
-  "dependencies": {}
+ 	 }
 }

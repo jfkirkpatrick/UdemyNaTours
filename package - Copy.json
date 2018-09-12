@@ -1,0 +1,38 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing Page for NaTours",
+  "main": "index.js",
+  "scripts":  {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css"
+ 	 },
+  "author": "John F Kirkpatrick",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+ 	 },
+  "dependencies": {},
+  
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"extensionName": ".css",
+			"savePath": "/css"
+		},
+		{
+			"extensionName": ".min.css",
+			"format": "compressed",
+			"savePath": "/dist/css"
+		}
+	],
+	"liveSassCompile.settings.excludeList": [
+		"**/node_modules/**",
+		".vscode/**"
+	],
+	"liveSassCompile.settings.generateMap": true,
+	"liveSassCompile.settings.autoprefix": [
+		"> 1%",
+		"last 2 versions"
+	]
+}
